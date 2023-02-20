@@ -31,7 +31,6 @@ public:
                 if (map[s[right]] < map_t[s[right]]) { 
                     ++cnt;
                 }
-                ++len;
                 ++map[s[right]];
 
                 while (cnt >= cnt_t) {
@@ -45,10 +44,12 @@ public:
                         }
                     }
                     ++left;
-                    --len;
                 }
 
                 if (cnt == cnt_t) {
+                    len = right - left + 1;
+                    //cout << left << " " << right << " len:" << len  << " minLen" << minLen << endl;
+                    
                     if (len < minLen) {
                         minLen = len;
                         minLeft = left;
@@ -57,20 +58,11 @@ public:
                 }
             }
         }
+        //cout << left << " " << right << " " << len << " " << minLen << endl;
         if (cnt == cnt_t)
-            return s.substr(left, right - left + 1);
+            return s.substr(minLeft, minRight - minLeft + 1);
         else return "";
 
     }
 };
 
-/* 
-这个子串是和顺序有关的！
-输入：
-"cabwefgewcwaefgcf"
-"cae"
-输出：
-"aefgc"
-预期
-"cwae"
-*/

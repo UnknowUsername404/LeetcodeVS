@@ -2,9 +2,24 @@
 //
 
 #include <iostream>
+using namespace std;
+
+
+struct test {
+    int operator()(const int& a, const int& b) {
+        return a + b;
+    }
+};
 
 int main()
 {
+    test a;
+    int b = 1;
+    int c = 2;
+    int d = int(3);
+    cout << ":" << a(b, c) << endl;
+    cout << " " << test()(d, c) << endl;
+
     std::cout << "Hello World!\n";
 }
 

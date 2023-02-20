@@ -13,10 +13,52 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\数组">
+      <UniqueIdentifier>{69380ee5-bb80-44a8-98f8-ef003e93429d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\数组\长度最小的子数组">
+      <UniqueIdentifier>{443814c4-efed-431c-9e03-6f1f1c678a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\数组\螺旋矩阵">
+      <UniqueIdentifier>{119d3a63-a2a8-4e8f-85bf-678cfd22f501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\链表">
+      <UniqueIdentifier>{d9494b92-b22a-40a6-9634-ca1bec83fe2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\哈希表">
+      <UniqueIdentifier>{a67e49ae-ac78-44e2-a486-ed636e77c51d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\哈希表\字母异位词">
+      <UniqueIdentifier>{30d425a3-8f88-4db9-a05e-61cec854c200}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LeetcodeVS.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode209.cpp">
+      <Filter>源文件\数组\长度最小的子数组</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode904.cpp">
+      <Filter>源文件\数组\长度最小的子数组</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode76.cpp">
+      <Filter>源文件\数组\长度最小的子数组</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode59.cpp">
+      <Filter>源文件\数组\螺旋矩阵</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode54.cpp">
+      <Filter>源文件\数组\螺旋矩阵</Filter>
+    </ClCompile>
+    <ClCompile Include="Offer29.cpp">
+      <Filter>源文件\数组\螺旋矩阵</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode203.cpp">
+      <Filter>源文件\链表</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode49.cpp">
+      <Filter>源文件\哈希表\字母异位词</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

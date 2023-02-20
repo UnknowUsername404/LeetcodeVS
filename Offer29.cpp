@@ -27,15 +27,15 @@ public:
                 result[index++] = matrix[i][r];
             }
             if (--r < l) break;
-            for (int i = r; r >= l; --r) {
+            for (int i = r; i >= l; --i) {
                 result[index++] = matrix[b][i];
             }
             if (--b < t) break;
-            for (int i = b; i >= t; ++i) {
+            for (int i = b; i >= t; --i) {
                 result[index++] = matrix[i][l];
             }
             if (++l > r) break;
         }
-
+        return result;
     }
 };
