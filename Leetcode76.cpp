@@ -5,7 +5,7 @@
 
 using namespace std;
 
-
+/*
 class Solution {
 public:
     string minWindow(string s, string t) {
@@ -66,3 +66,39 @@ public:
     }
 };
 
+*/
+
+
+class Solution {
+public:
+    string minWindow(string s, string t) {
+        unordered_map<char, int> need;
+        int total = 0;
+        for (char it : t) {
+            ++need[it];
+            ++total;
+        }
+        int left = 0, right = s.size() - 1;
+        int j = 0;
+        for (int i = 0; i < s.size(); i++) {
+            
+            if (need.find(s[i]) != need.end()) {
+                while (need[s[i]] <= 0) {
+                    if (need.find(s[j]) != need.end()) {
+                        ++need[s[j]];
+                        ++j;
+                        ++total;
+                    }
+                }
+                --need[s[i]];
+                --total;
+                if(total == 0 && i - j < right - left){
+                    right = i;
+                    left = j;
+                }
+                
+            }
+        }
+        return s.substr(left, right - left + 1);
+    }
+};
