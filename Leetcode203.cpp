@@ -17,7 +17,7 @@ public:
     ListNode* removeElements(ListNode* head, int val) {
         ListNode* current = head;
         ListNode* front = new ListNode();
-        front->next = head;
+        front->next = head;//为链表添加一个头节点，统一循环中的子操作
         head = front;
         while (current) {
             if (current->val == val) {

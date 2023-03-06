@@ -2,7 +2,7 @@
 #include <vector>
 
 using namespace std;
-
+/*
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
@@ -62,6 +62,9 @@ public:
     }
     
 };
+
+*/
+
 /*
 
 class Solution {
@@ -90,4 +93,62 @@ public:
 
 */
 
+/*
+由于已经给出了矩阵，可以通过给遍历过的值赋INT_MAX的方式来表示此位置已经被遍历过，然后通过getNext方法获得下一个数字
+getNext采用顺时针顺序查找元素，但是需要注意，右>下>左>上这种顺序会出现一个问题，当既可以向上也可以向右的时候会选择向右，需要特殊判断
+*/
 
+class Solution {
+public:
+    int getNext(vector<vector<int>>& matrix, int &x, int &y, int m, int n) {
+        int res = INT_MAX;
+        if (x + 1 < n && matrix[y][x + 1] != INT_MAX) {
+            if (y - 1 >= 0 && matrix[y - 1][x] != INT_MAX) {//向右的时候如果也可以向上则向上走
+                res = matrix[y - 1][x];
+                matrix[y - 1][x] = INT_MAX;
+                --y;
+                return res;
+            }
+            res = matrix[y][x + 1];
+            matrix[y][x + 1] = INT_MAX;
+            ++x;
+        }
+        else if (y + 1 < m && matrix[y + 1][x] != INT_MAX) {
+            res = matrix[y + 1][x];
+            matrix[y + 1][x] = INT_MAX;
+            ++y;
+        }
+        else if (x - 1 >= 0 && matrix[y][x - 1] != INT_MAX) {
+            res = matrix[y][x - 1];
+            matrix[y][x - 1] = INT_MAX;
+            --x;
+        }
+        else if (y - 1 >= 0 && matrix[y - 1][x] != INT_MAX) {
+            res = matrix[y - 1][x];
+            matrix[y - 1][x] = INT_MAX;
+            --y;
+        }
+        return res;
+    }
+
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        int m = matrix.size();
+        int n = matrix[0].size();
+
+        int num = 1;
+        int maxNum = n * m;
+        vector<int> res;
+        if(m == 0 || n == 0) return res;
+        int x = 0;
+        int y = 0;
+        res.push_back(matrix[0][0]);
+        matrix[0][0] = INT_MAX;
+        
+        while (true) {
+            int temp = getNext(matrix, x, y, m, n);
+            if (temp != INT_MAX) res.push_back(temp);
+            else break;
+        }
+        return res;
+    }
+};

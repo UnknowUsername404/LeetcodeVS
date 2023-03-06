@@ -31,6 +31,12 @@
     <Filter Include="源文件\哈希表\字母异位词">
       <UniqueIdentifier>{30d425a3-8f88-4db9-a05e-61cec854c200}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\哈希表\三、四数之和">
+      <UniqueIdentifier>{166c2dac-b317-4b76-9ac8-294a5459a097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\字符串">
+      <UniqueIdentifier>{b817be9b-11da-4a22-a793-c63a2068a720}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LeetcodeVS.cpp">
@@ -59,6 +65,45 @@
     </ClCompile>
     <ClCompile Include="Leetcode49.cpp">
       <Filter>源文件\哈希表\字母异位词</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode202.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode206.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode24.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode350.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode707.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode142.cpp">
+      <Filter>源文件\链表</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode242.cpp">
+      <Filter>源文件\哈希表\字母异位词</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode383.cpp">
+      <Filter>源文件\哈希表\字母异位词</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode438.cpp">
+      <Filter>源文件\哈希表\字母异位词</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode15.cpp">
+      <Filter>源文件\哈希表\三、四数之和</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode18.cpp">
+      <Filter>源文件\哈希表\三、四数之和</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode344.cpp">
+      <Filter>源文件\字符串</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode151.cpp">
+      <Filter>源文件\字符串</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

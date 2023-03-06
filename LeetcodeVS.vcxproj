@@ -139,14 +139,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Leetcode142.cpp" />
+    <ClCompile Include="Leetcode15.cpp" />
+    <ClCompile Include="Leetcode151.cpp" />
+    <ClCompile Include="Leetcode18.cpp" />
     <ClCompile Include="Leetcode202.cpp" />
     <ClCompile Include="Leetcode203.cpp" />
+    <ClCompile Include="Leetcode206.cpp" />
     <ClCompile Include="Leetcode209.cpp" />
+    <ClCompile Include="Leetcode24.cpp" />
+    <ClCompile Include="Leetcode242.cpp" />
+    <ClCompile Include="Leetcode344.cpp" />
     <ClCompile Include="Leetcode350.cpp" />
+    <ClCompile Include="Leetcode383.cpp" />
     <ClCompile Include="Leetcode438.cpp" />
     <ClCompile Include="Leetcode49.cpp" />
     <ClCompile Include="Leetcode54.cpp" />
     <ClCompile Include="Leetcode59.cpp" />
+    <ClCompile Include="Leetcode707.cpp" />
     <ClCompile Include="Leetcode76.cpp" />
     <ClCompile Include="Leetcode904.cpp" />
     <ClCompile Include="LeetcodeVS.cpp" />
